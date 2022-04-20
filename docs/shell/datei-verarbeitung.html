@@ -278,7 +278,7 @@ Welche der von <code>history</code> gelisteten Befehle wurden am häufigsten ver
 
                 <!-- Livereload script (if served using the cli tool) -->
         <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            var socket = new WebSocket("ws://localhost:3333/__livereload");
             socket.onmessage = function (event) {
                 if (event.data === "reload") {
                     socket.close();

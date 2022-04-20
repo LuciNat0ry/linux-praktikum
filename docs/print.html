@@ -717,6 +717,8 @@ apt search $PAKET
 apt show $PAKET
 
 apt install $PAKET
+
+apt remove $PAKET
 </code></pre>
 <h2 id="a-hrefhttpswikiubuntuusersdeapt-fileapt-filea"><a class="header" href="#a-hrefhttpswikiubuntuusersdeapt-fileapt-filea"><a href="https://wiki.ubuntuusers.de/apt-file/">apt-file</a></a></h2>
 <pre><code class="language-bash">apt-file update
@@ -1481,7 +1483,7 @@ XOr-Verschlüsselung</li>
 
                 <!-- Livereload script (if served using the cli tool) -->
         <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            var socket = new WebSocket("ws://localhost:3333/__livereload");
             socket.onmessage = function (event) {
                 if (event.data === "reload") {
                     socket.close();
